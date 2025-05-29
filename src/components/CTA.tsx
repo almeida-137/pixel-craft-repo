@@ -102,7 +102,7 @@ export const CTA = () => {
                 </div>
               </div>
 
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+              {/* <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
                 <h4 className="text-white font-bold text-lg mb-3">🚀 Oferta Especial</h4>
                 <p className="text-gray-300 mb-4">
                   Orçamento gratuito + consultoria estratégica sem compromisso para novos projetos!
@@ -110,7 +110,7 @@ export const CTA = () => {
                 <div className="text-sm text-gray-400">
                   * Válido até o final do mês
                 </div>
-              </div>
+              </div> */}
             </div>
 
             {/* Right Side - Form */}

@@ -52,7 +52,7 @@ const testimonials: Testimonial[] = [
 ];
 
 export const Testimonials = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(-1);
 
   const nextTestimonial = () => {
     setCurrentIndex((prev) => (prev + 1) % testimonials.length);
@@ -83,7 +83,7 @@ export const Testimonials = () => {
         </div>
 
         {/* Main Testimonial */}
-        <div className="max-w-4xl mx-auto mb-12">
+        {/* <div className="max-w-4xl mx-auto mb-12">
           <div className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl p-8 md:p-12 shadow-xl relative animate-fade-in-up">
             <div className="absolute top-6 left-6 text-6xl text-blue-200 font-serif">"</div>
             
@@ -112,10 +112,10 @@ export const Testimonials = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Navigation */}
-          <div className="flex justify-center items-center space-x-6 mt-8">
+          {/* <div className="flex justify-center items-center space-x-6 mt-8">
             <Button 
               variant="outline" 
               size="sm"
@@ -146,7 +146,7 @@ export const Testimonials = () => {
               →
             </Button>
           </div>
-        </div>
+        </div> */}
 
         {/* Testimonial Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
