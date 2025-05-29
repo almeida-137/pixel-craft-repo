@@ -32,27 +32,27 @@ export const Header = () => {
               <span className="text-white font-bold text-xl">P</span>
             </div>
             <div>
-              <h1 className="text-xl font-bold text-gray-900">PixelCraft</h1>
-              <p className="text-xs text-gray-600">Criando experiências digitais</p>
+              <h1 className="text-xl font-bold text-gray-200">PixelCraft</h1>
+              <p className="text-xs text-gray-500">Criando experiências digitais</p>
             </div>
           </div>
 
           <nav className="hidden md:flex items-center space-x-8">
             <button 
               onClick={() => scrollToSection('projetos')}
-              className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+              className="text-gray-500 hover:text-blue-600 transition-colors font-medium"
             >
               Projetos
             </button>
             <button 
               onClick={() => scrollToSection('depoimentos')}
-              className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+              className="text-gray-500 hover:text-blue-600 transition-colors font-medium"
             >
               Depoimentos
             </button>
             <button 
               onClick={() => scrollToSection('contato')}
-              className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+              className="text-gray-500 hover:text-blue-600 transition-colors font-medium"
             >
               Contato
             </button>

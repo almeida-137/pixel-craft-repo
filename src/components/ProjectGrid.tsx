@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import { useNavigate } from 'react-router-dom';
 
 interface Project {
   id: number;
@@ -18,13 +19,13 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: "E-commerce Fashion Forward",
-    client: "Boutique Moderna",
-    description: "Plataforma completa de e-commerce com sistema de pagamento integrado, gerenciamento de estoque e dashboard administrativo.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
-    category: "ecommerce",
-    tech: ["React", "Node.js", "Stripe", "MongoDB"],
-    link: "https://example.com",
+    title: "DocSafe",
+    client: "Gigante Engenharia",
+    description: "Docsafe é uma plataforma especializada em gestão de documentos digitais voltada para Segurança e Saúde no Trabalho (SST) e segurança ocupacional. Facilita o controle, armazenamento e compartilhamento de documentos relacionados a normas regulamentadoras, treinamentos, laudos técnicos, PPRA, PCMSO e demais exigências legais, garantindo organização, conformidade e acessibilidade para empresas e profissionais da área.",
+    image: "/images/docsafe.png",
+    category: "sistema",
+    tech: ["Next", "Supabase", "Stripe"],
+    link: "https://docsafe.app.br",
     featured: true
   },
   {
@@ -49,45 +50,56 @@ const projects: Project[] = [
   },
   {
     id: 4,
-    title: "Sistema de Gestão Clínica",
-    client: "MedCenter",
-    description: "Aplicação web para gestão de clínicas médicas com agendamento online, prontuários digitais e relatórios.",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop",
+    title: "Sistema Orbit",
+    client: "OrbitSys",
+    description: "Orbit é um sistema completo para comércios, que oferece soluções de PDV (ponto de venda) e gerenciamento de vendas. Facilita o controle de estoque, vendas, clientes e fluxo financeiro, ajudando negócios a otimizar operações e aumentar a eficiência no atendimento.",
+    image: "/images/orbitsys.png",
     category: "sistema",
-    tech: ["Vue.js", "Laravel", "PostgreSQL"],
-    link: "https://example.com"
+    tech: ["React", "Vite", "Electron", "MongoDB"],
+    link: "https://orbitsys.com.br"
   },
   {
     id: 5,
-    title: "Portal de Notícias",
-    client: "News Digital",
-    description: "Portal de notícias responsivo com sistema de comentários, newsletter e painel administrativo completo.",
-    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&h=600&fit=crop",
-    category: "institucional",
-    tech: ["React", "Express", "MongoDB"],
-    link: "https://example.com"
+    title: "MaviStudio",
+    client: "MaviStudio",
+    description: "O site foi desenvolvido para apresentar de forma clara e atraente os serviços oferecidos pelo Mavi Studio, destacando sua expertise em design gráfico, branding e consultoria para empresas que buscam fortalecer sua imagem no mercado.",
+    image: "/images/mavistudio.png",
+    category: "landing",
+    tech: ["React", "TypeScript", "Vite"],
+    link: "https://mavistudio.com.br"
   },
   {
     id: 6,
-    title: "App de Delivery",
-    client: "Food Express",
-    description: "Aplicação web para delivery de comida com geolocalização, pagamentos online e tracking em tempo real.",
-    image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=800&h=600&fit=crop",
-    category: "ecommerce",
-    tech: ["React Native", "Node.js", "Socket.io"],
-    link: "https://example.com"
+    title: "BurguerVerse",
+    client: "BurguerVerse",
+    description: "Burger Verse Online é uma aplicação web responsiva para pedidos online de hambúrgueres, desenvolvida para oferecer uma experiência simples, rápida e moderna aos usuários que desejam saborear seus hambúrgueres favoritos com poucos cliques.",
+    image: "/images/burguerverse.png",
+    category: "landing",
+    tech: ["React", "TypeScript", "Vite"],
+    link: "https://burger-verse-online.vercel.app"
+  },
+  {
+    id: 7,
+    title: "ManuTech",
+    client: "PostPortas",
+    description: "ManuTech é um sistema de gerenciamento de manutenções industriais, rotinas de manutenções, execução de ordens de serviço e relatórios de manutenção",
+    image: "/images/manutech.png",
+    category: "sistema",
+    tech: ["React", "TypeScript", "Supabase"],
+    link: "https://industrial-tech-pulse.vercel.app"
   }
 ];
 
 const categories = [
   { key: 'all', label: 'Todos os Projetos' },
-  { key: 'ecommerce', label: 'E-commerce' },
+  // { key: 'ecommerce', label: 'E-commerce' },
   { key: 'institucional', label: 'Institucional' },
   { key: 'landing', label: 'Landing Pages' },
   { key: 'sistema', label: 'Sistemas' }
 ];
 
 export const ProjectGrid = () => {
+  const navigate = useNavigate();
   const [activeCategory, setActiveCategory] = useState('all');
   const [visibleProjects, setVisibleProjects] = useState(6);
 
@@ -142,12 +154,12 @@ export const ProjectGrid = () => {
                     ))}
                   </div>
                   <div className="flex gap-4">
-                    <Button className="bg-gradient-primary hover:opacity-90">
+                    <Button  onClick={() => window.open(featuredProject.link, '_blank')} className="bg-gradient-primary hover:opacity-90">
                       Ver Projeto
                     </Button>
-                    <Button variant="outline">
+                    {/* <Button variant="outline">
                       Ler Case Study
-                    </Button>
+                    </Button> */}
                   </div>
                 </div>
               </div>
@@ -192,7 +204,7 @@ export const ProjectGrid = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
                   <div className="p-4 text-white">
-                    <Button size="sm" className="bg-white/20 backdrop-blur-sm text-white border-white/30">
+                    <Button  onClick={() => window.open(project.link, '_blank')} size="sm" className="bg-white/20 backdrop-blur-sm text-white border-white/30">
                       Ver Projeto
                     </Button>
                   </div>
