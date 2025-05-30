@@ -30,23 +30,23 @@ const projects: Project[] = [
   },
   {
     id: 2,
-    title: "Site Institucional Advocacia",
-    client: "Silva & Associados",
+    title: "Cartas Contempladas",
+    client: "Guilherme Moura",
     description: "Website profissional para escritório de advocacia com blog integrado, formulários de contato e área restrita para clientes.",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=600&fit=crop",
+    image: "/images/cartascontempladas.png",
     category: "institucional",
-    tech: ["WordPress", "PHP", "MySQL"],
-    link: "https://example.com"
+    tech: ["React", "TypeScript", "Vite"],
+    link: "https://carta-showcase-central.vercel.app"
   },
   {
     id: 3,
-    title: "Landing Page SaaS",
-    client: "TechFlow",
+    title: "Mesa Fácil SaaS",
+    client: "Agência MaviStudio",
     description: "Landing page de alta conversão para software B2B com integração CRM e automação de marketing.",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop",
-    category: "landing",
-    tech: ["Next.js", "TypeScript", "Tailwind"],
-    link: "https://example.com"
+    image: "/images/mesafacil.png",
+    category: "sistema",
+    tech: ["Next.js", "TypeScript", "Tailwind", "Supabase"],
+    link: "https://mesa-facil-reservas-online.vercel.app"
   },
   {
     id: 4,
