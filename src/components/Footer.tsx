@@ -22,7 +22,7 @@ export const Footer = () => {
               Especialistas em desenvolvimento web moderno e design inovador.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">
+              {/* <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">
                 <span className="text-sm">in</span>
               </a>
               <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-400 transition-colors">
@@ -30,7 +30,7 @@ export const Footer = () => {
               </a>
               <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-purple-600 transition-colors">
                 <span className="text-sm">ig</span>
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -39,7 +39,7 @@ export const Footer = () => {
             <h4 className="font-semibold mb-4">Serviços</h4>
             <ul className="space-y-2 text-gray-400">
               <li><a href="#" className="hover:text-white transition-colors">Desenvolvimento Web</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">E-commerce</a></li>
+              {/* <li><a href="#" className="hover:text-white transition-colors">E-commerce</a></li> */}
               <li><a href="#" className="hover:text-white transition-colors">Sistemas Web</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Landing Pages</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Consultoria Digital</a></li>
@@ -47,7 +47,7 @@ export const Footer = () => {
           </div>
 
           {/* Contact */}
-          <div>
+          {/* <div>
             <h4 className="font-semibold mb-4">Contato</h4>
             <ul className="space-y-2 text-gray-400">
               <li>
@@ -67,7 +67,7 @@ export const Footer = () => {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
