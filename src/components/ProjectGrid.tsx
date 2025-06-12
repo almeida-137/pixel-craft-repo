@@ -87,6 +87,16 @@ const projects: Project[] = [
     category: "sistema",
     tech: ["React", "TypeScript", "Supabase"],
     link: "https://industrial-tech-pulse.vercel.app"
+  },
+  {
+    id: 7,
+    title: "Orçamento Express",
+    client: "MaviStudio",
+    description: "Orçamento Express é um Micro-SaaS para gerenciamento de orçamentos para micro-empreendedores, facilidade na criação e link para aprovação por cliente.",
+    image: "/images/orcaexpress.png",
+    category: "sistema",
+    tech: ["Next", "TypeScript", "Supabase"],
+    link: "https://orcamento-express-teal.vercel.app/"
   }
 ];
 
