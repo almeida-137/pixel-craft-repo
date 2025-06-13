@@ -97,6 +97,16 @@ const projects: Project[] = [
     category: "sistema",
     tech: ["Next", "TypeScript", "Supabase"],
     link: "https://orcamento-express-teal.vercel.app/"
+  },
+  {
+    id: 8,
+    title: "Calculadora Preço Ifood",
+    client: "MaviStudio",
+    description: "Calculadora Preço Ifood é um Micro-SaaS para gerenciamento de preços de produtos para deliverys, calculo de CMV e lucro.",
+    image: "/images/calculado.png",
+    category: "sistema",
+    tech: ["Next", "TypeScript", "Supabase"],
+    link: "https://restaura-profit-calc.vercel.app"
   }
 ];
 
