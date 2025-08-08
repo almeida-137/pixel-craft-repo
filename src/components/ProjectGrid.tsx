@@ -107,6 +107,26 @@ const projects: Project[] = [
     category: "sistema",
     tech: ["Next", "TypeScript", "Supabase"],
     link: "https://restaura-profit-calc.vercel.app"
+  },
+  {
+    id: 9,
+    title: "Controla Fácil - Fluxo Financeiro",
+    client: "MaviStudio",
+    description: "Controla Fácil é um Micro-SaaS para gerenciamento de finanças pessoais, com lançamento de receitas, despesas e relatórios em PDF.",
+    image: "/images/controlafacil.png",
+    category: "sistema",
+    tech: ["React", "TypeScript", "Supabase"],
+    link: "https://fluxo-financeiro-three.vercel.app"
+  },
+  {
+    id: 10,
+    title: "Estruturador de Sermões",
+    client: "SermonMaker",
+    description: "Sermon Maker é um sistema de criação e estruturação de sermões biblicos utilizando inteligência artificial, disponível em espanhol e português.",
+    image: "/images/sermao.png",
+    category: "sistema",
+    tech: ["React", "TypeScript", "Supabase"],
+    link: "https://sermao-maker.vercel.app"
   }
 ];
 

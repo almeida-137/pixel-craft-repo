@@ -28,12 +28,27 @@ export const CTA = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simular envio do formulário
-    setTimeout(() => {
+    try {
+      const response = await fetch(
+        'https://hook.us2.make.com/35qjcr4n2jah6r1dr1dywkfi7by73rr2',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error('Erro ao enviar formulário');
+      }
+
       toast({
         title: "Mensagem enviada com sucesso!",
         description: "Entraremos em contato em até 24h. Obrigado pelo interesse!",
       });
+
       setFormData({
         name: '',
         email: '',
@@ -41,8 +56,15 @@ export const CTA = () => {
         project: '',
         message: ''
       });
+    } catch (error) {
+      toast({
+        title: "Erro ao enviar mensagem",
+        description: "Tente novamente mais tarde.",
+        variant: "destructive"
+      });
+    } finally {
       setIsSubmitting(false);
-    }, 2000);
+    }
   };
 
   return (
