@@ -50,11 +50,11 @@ export const Hero = () => {
               <div className="text-gray-300">Projetos Entregues</div>
             </div>
             <div className="text-center animate-slide-in-left" style={{ animationDelay: '0.4s' }}>
-              <div className="text-3xl font-bold text-white mb-2">100%</div>
+              <div className="text-3xl font-bold text-white mb-2">95%</div>
               <div className="text-gray-300">Clientes Satisfeitos</div>
             </div>
             <div className="text-center animate-slide-in-left" style={{ animationDelay: '0.6s' }}>
-              <div className="text-3xl font-bold text-white mb-2">3 Anos</div>
+              <div className="text-3xl font-bold text-white mb-2">4 Anos</div>
               <div className="text-gray-300">De Experiência</div>
             </div>
           </div>
