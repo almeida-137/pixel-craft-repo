@@ -19,7 +19,7 @@ const testimonials: Testimonial[] = [
     company: "Boutique Moderna",
     role: "CEO",
     content: "A PixelCraft transformou completamente nossa presença digital. O e-commerce que desenvolveram aumentou nossas vendas em 300% nos primeiros 6 meses. Profissionais excepcionais!",
-    avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b1-5c?w=150&h=150&fit=crop&crop=face",
+    avatar: "/images/ana.jpg",
     rating: 5
   },
   {
@@ -28,7 +28,7 @@ const testimonials: Testimonial[] = [
     company: "Silva & Associados",
     role: "Sócio Fundador",
     content: "O site institucional ficou impecável. Design elegante, funcionalidade perfeita e um aumento significativo na captação de novos clientes. Recomendo sem hesitar!",
-    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
+    avatar: "/images/carlos.jpg",
     rating: 5
   },
   {
@@ -37,7 +37,7 @@ const testimonials: Testimonial[] = [
     company: "TechFlow",
     role: "Head of Marketing",
     content: "A landing page desenvolvida pela equipe gerou uma taxa de conversão 40% superior à anterior. O trabalho foi entregue no prazo e superou todas as expectativas.",
-    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
+    avatar: "/images/mariana.jpg",
     rating: 5
   },
   {
@@ -46,7 +46,7 @@ const testimonials: Testimonial[] = [
     company: "MedCenter",
     role: "Diretor Médico",
     content: "O sistema de gestão revolucionou nossa clínica. Agendamentos mais eficientes, prontuários organizados e relatórios detalhados. Excelente investimento!",
-    avatar: "https://images.unsplash.com/photo-1559209172-8d2b53d5b9b2?w=150&h=150&fit=crop&crop=face",
+    avatar: "/images/eduardo.jpg",
     rating: 5
   }
 ];

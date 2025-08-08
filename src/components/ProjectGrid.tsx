@@ -127,6 +127,46 @@ const projects: Project[] = [
     category: "sistema",
     tech: ["React", "TypeScript", "Supabase"],
     link: "https://sermao-maker.vercel.app"
+  },
+  {
+    id: 11,
+    title: "Conversão Fácil",
+    client: "Easy",
+    description: "Easy Measure é um sistema de conversão de unidades no geral, peso, comprimento, volume, temperatura, áres, velocidade e tempo. O conversor de medidas completo e rápido.",
+    image: "/images/easy-measure.png",
+    category: "sistema",
+    tech: ["React", "TypeScript", "Supabase"],
+    link: "https://easy-measure-convert.vercel.app"
+  },
+  {
+    id: 12,
+    title: "Gerador de Senhas",
+    client: "Secure",
+    description: "Gerador de senhas complexas com a quantidade de caracters selecionada, utilizando de regras para proteção de senhas com caracters especiais e muito mais!",
+    image: "/images/key-generate.png",
+    category: "sistema",
+    tech: ["React", "TypeScript", "Supabase"],
+    link: "https://secure-key-generate.vercel.app"
+  },
+  {
+    id: 13,
+    title: "Conversor de Unidades",
+    client: "Uni",
+    description: "Sistema de conversão de unidades no geral, peso, comprimento, volume, temperatura, áres, velocidade e tempo. O conversor de medidas completo e rápido.",
+    image: "/images/uni-measure.png",
+    category: "sistema",
+    tech: ["React", "TypeScript", "Supabase"],
+    link: "https://uni-measure.vercel.app"
+  },
+  {
+    id: 14,
+    title: "Calculadora de Juros",
+    client: "FiCalc",
+    description: "Simule financiamentos e entenda o real custo das suas compras parceladas",
+    image: "/images/parcelamento-financas.png",
+    category: "sistema",
+    tech: ["React", "TypeScript", "Supabase"],
+    link: "https://parcelamento-financas.vercel.app"
   }
 ];
 
